@@ -6,6 +6,7 @@ let handsfree;
 function App() {
   const [finalMove, setFinalMove] = useState('');
   const [timer, setTimer] = useState(10);
+  const [cameraFlag, setCameraFlag] = useState(false);
   useEffect(() => {
     handsfree = new Handsfree({ hands: true });
     handsfree.start();
@@ -150,19 +151,32 @@ function App() {
         }
       }
     });
+    navigator.getUserMedia(
+      { video: true },
+      stream => {
+        if (stream.getVideoTracks().length > 0) {
+          setCameraFlag(true);
+        } else {
+        }
+      },
+      () => {}
+    );
   }, []);
 
   useEffect(() => {
-    if (timer === 10) {
-      handsfree.start();
+    if (cameraFlag === true) {
+      if (timer === 10) {
+        handsfree.start();
+      }
+      if (timer > 0) {
+        setTimeout(() => setTimer(timer - 1), 1000);
+      } else {
+        handsfree.pause();
+        setTimeout(() => setTimer(10), 5000);
+      }
     }
-    if (timer > 0) {
-      setTimeout(() => setTimer(timer - 1), 1000);
-    } else {
-      handsfree.pause();
-      setTimeout(() => setTimer(10), 5000);
-    }
-  }, [timer]);
+  }, [timer, cameraFlag]);
+
   return (
     <div className="App">
       <h1>{timer > 0 ? 'Please select a move' : 'Your move is'}</h1>
