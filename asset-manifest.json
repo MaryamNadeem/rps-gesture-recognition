@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/rps-gesture-recognition/static/css/main.a617e044.chunk.css",
-    "main.js": "/rps-gesture-recognition/static/js/main.4780a2cd.chunk.js",
-    "main.js.map": "/rps-gesture-recognition/static/js/main.4780a2cd.chunk.js.map",
+    "main.js": "/rps-gesture-recognition/static/js/main.3b043035.chunk.js",
+    "main.js.map": "/rps-gesture-recognition/static/js/main.3b043035.chunk.js.map",
     "runtime-main.js": "/rps-gesture-recognition/static/js/runtime-main.d37a1716.js",
     "runtime-main.js.map": "/rps-gesture-recognition/static/js/runtime-main.d37a1716.js.map",
-    "static/js/2.6f0131ef.chunk.js": "/rps-gesture-recognition/static/js/2.6f0131ef.chunk.js",
-    "static/js/2.6f0131ef.chunk.js.map": "/rps-gesture-recognition/static/js/2.6f0131ef.chunk.js.map",
+    "static/js/2.c1d7528e.chunk.js": "/rps-gesture-recognition/static/js/2.c1d7528e.chunk.js",
+    "static/js/2.c1d7528e.chunk.js.map": "/rps-gesture-recognition/static/js/2.c1d7528e.chunk.js.map",
     "static/js/3.f4a757db.chunk.js": "/rps-gesture-recognition/static/js/3.f4a757db.chunk.js",
     "static/js/3.f4a757db.chunk.js.map": "/rps-gesture-recognition/static/js/3.f4a757db.chunk.js.map",
     "index.html": "/rps-gesture-recognition/index.html",
     "static/css/main.a617e044.chunk.css.map": "/rps-gesture-recognition/static/css/main.a617e044.chunk.css.map",
-    "static/js/2.6f0131ef.chunk.js.LICENSE.txt": "/rps-gesture-recognition/static/js/2.6f0131ef.chunk.js.LICENSE.txt"
+    "static/js/2.c1d7528e.chunk.js.LICENSE.txt": "/rps-gesture-recognition/static/js/2.c1d7528e.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.d37a1716.js",
-    "static/js/2.6f0131ef.chunk.js",
+    "static/js/2.c1d7528e.chunk.js",
     "static/css/main.a617e044.chunk.css",
-    "static/js/main.4780a2cd.chunk.js"
+    "static/js/main.3b043035.chunk.js"
   ]
 }
