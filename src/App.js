@@ -5,7 +5,7 @@ import { useEffect, useState } from 'react';
 let handsfree;
 function App() {
   const [finalMove, setFinalMove] = useState('');
-  const [timer, setTimer] = useState(5);
+  const [timer, setTimer] = useState(10);
   useEffect(() => {
     handsfree = new Handsfree({ hands: true });
     handsfree.start();
@@ -153,14 +153,14 @@ function App() {
   }, []);
 
   useEffect(() => {
-    if (timer === 5) {
+    if (timer === 10) {
       handsfree.start();
     }
     if (timer > 0) {
       setTimeout(() => setTimer(timer - 1), 1000);
     } else {
       handsfree.pause();
-      setTimeout(() => setTimer(5), 5000);
+      setTimeout(() => setTimer(10), 5000);
     }
   }, [timer]);
   return (
